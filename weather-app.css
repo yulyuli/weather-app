@@ -1,4 +1,4 @@
-.weather-app {
+body {
   border: 2px solid lightgrey;
   margin: 15px auto;
   max-width: 600px;
@@ -44,5 +44,9 @@ img {
 .emoji,
 .days,
 .next-days-temperature {
+  margin: 15px;
+}
+.link {
+    text-align: center;
   margin: 15px;
 }
