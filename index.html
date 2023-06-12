@@ -19,97 +19,82 @@
       rel="stylesheet"
     />
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
-    integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
-          <div class="container">
+    <div class="container">
+      <div class="weather-app">
+        <div class="container">
+          <h1>Temperature for today</h1>
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2 col-9"
+                  id="city-input"
+                  type="search"
+                  placeholder="Choose a city..."
+                  aria-label="Search"
+                />
+                <div class="col-3">
+                  <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+                <button id="currentbtn" class="btn btn-success" type="submit">
+                  Current
+                </button>
+              </form>
+            </div>
+          </nav>
 
-    <div class="weather-app">
-      <div class="container">
-       <!--  <div class="container cities">
           <div class="row">
-            <div class="col" id="lisbon">Lisbon</div>
-            <div class="col">Paris</div>
-            <div class="col">Shanghai</div>
-            <div class="col-4">Bangkok</div>
-          </div>
-        </div> -->
-      <h1>Temperature for today</h1>
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2 col-9" id="city-input"
-                type="search"
-                placeholder="Choose a city..."
-                aria-label="Search"
-              />
-              <div class="col-3">
-              <button class="btn btn-primary" type="submit">
-                Search
-              </button></div>
-              <button id="currentbtn" class="btn btn-success" type="submit">
-                Current
-              </button>
-            </form>
-          </div>
-        </nav>
+            <div class="col-6">
+              <ul>
+                <li class="paris">Paris</li>
+                <li class="date-time">
+                  <span id="day"></span> <span id="hours"> </span
+                  ><span id="minutes"></span>
+                </li>
+              </ul>
+            </div>
 
-        <div class="row">
-          <div class="col-6">
-            <ul>
-              <li class="paris">Paris</li>
-             <li class="date-time" <span id="day"></span> <span id="hours"> </span><span id="minutes"></span></li>
-            </ul>
+            <div class="col-6 wind">
+              <ul>
+                <li>Wind: <span class="wind">km/h</span></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-6 wind">
-            <ul>
+          <div><span class="temperature"> </span></div>
 
-              <li>Wind: <span class="wind">km/h</span></li>
-            </ul>
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Thu</div>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max"> 18° </span>
+                  <span class="weather-forecast-temperature-min"> 12° </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div <span class="temperature"> </span>°</div>
-
-        <!-- <div class="row days">
-          <div class="col">Fri</div>
-          <div class="col">Sat</div>
-          <div class="col">Sun</div>
-          <div class="col">Mon</div>
-          <div class="col">Tue</div>
-        </div>
-        <div class="row emoji">
-          <div class="col">
-            <img src="/Users/uliaurchenko/Desktop/ web/git/weather-app/src/rainy.svg" />
-          </div>
-          <div class="col">
-            <img src="/Users/uliaurchenko/Desktop/ web/git/weather-app/src/rainy.svg" />
-          </div>
-          <div class="col">
-            <img src="/Users/uliaurchenko/Desktop/ web/git/weather-app/src/rainy.svg" />
-          </div>
-          <div class="col">
-            <img src="/Users/uliaurchenko/Desktop/ web/git/weather-app/src/rainy.svg" />
-          </div>
-          <div class="col">
-            <img src="/Users/uliaurchenko/Desktop/ web/git/weather-app/src/rainy.svg" />
-          </div>
-        </div>
-        <div class="row next-days-temperature">
-          <div class="col">23</div>
-          <div class="col">21</div>
-          <div class="col">22</div>
-          <div class="col">21</div>
-          <div class="col">19</div>
-        </div> -->
-      </div></div>
-      <div class="link"><a href="https://github.com/yulyuli/weather-app" target="_blank">Open-source code by Yulia Yurchenko</a></div>
+    <div class="link">
+      <a href="https://github.com/yulyuli/weather-app" target="_blank"
+        >Open-source code by Yulia Yurchenko</a
+      >
+    </div>
 
     <script src="weather-app.js"></script>
   </body>
